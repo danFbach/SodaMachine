@@ -46,7 +46,6 @@
     <Compile Include="Coins.cs" />
     <Compile Include="Dime.cs" />
     <Compile Include="Grape.cs" />
-    <Compile Include="IDispense.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Machine.cs" />
     <Compile Include="Meat.cs" />

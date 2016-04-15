@@ -8,6 +8,6 @@ namespace SodaMachine
 {
     public class Coins
     {
-        public double value;
+        public decimal value;
     }
 }

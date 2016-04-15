@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public Dime()
         {
-            value = .10;
+            value = .10m;
         }
     }
 }
