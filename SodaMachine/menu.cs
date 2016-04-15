@@ -103,11 +103,14 @@ namespace SodaMachine
             if (anotherDrink.Equals("n"))
             {
                 Console.WriteLine("Ok, your change of {0} has been dispensed. Press any button to proceed.",balance.ToString("C2"));
+                machine.insertedBalance.Clear();
                 Console.ReadKey();
+                Console.Clear();
                 return 0m;
             }
             else Console.WriteLine("Ok I will hold on to your remaining balance of {0} for your next purchase. Press any button to proceed.", balance.ToString("C2"));
             Console.ReadKey();
+            Console.Clear();
             return balance;
 
         }

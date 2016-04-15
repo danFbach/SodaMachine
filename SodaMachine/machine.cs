@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public Inventory inventory = new Inventory();
         Register register = new Register();
-        List<Coins> insertedBalance = new List<Coins>();
+        public List<Coins> insertedBalance = new List<Coins>();
         List<Coins> tempReg = new List<Coins>();
         public Machine()
         {
