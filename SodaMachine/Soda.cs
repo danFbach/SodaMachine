@@ -11,7 +11,6 @@ namespace SodaMachine
         public double price;
         public Soda()
         {
-
         }
     }
 }

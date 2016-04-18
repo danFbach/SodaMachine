@@ -12,18 +12,15 @@ namespace SodaMachine
         Machine machine = new Machine();
         public Menu()
         {
-
         }
         public void selectSoda()
-        {
-            
+        {            
             decimal price = 0;
             string soda = "";
             int selection;
             Console.WriteLine("What kind of soda would you like? \n\r1) Orange $0.60 \n\r2) Grape $0.35 \n\r3) Meat-flavored $0.06");
             bool check = int.TryParse(Console.ReadLine(), out selection);
             if (!check) { Console.WriteLine("Invalid Entry."); selectSoda(); }
-
             switch (selection)
             {
                 case (1):
@@ -48,7 +45,6 @@ namespace SodaMachine
                     selectSoda();
                     break;
             }
-
         }
         public decimal insertChange(decimal sodaPrice, string soda)
         {
@@ -112,7 +108,6 @@ namespace SodaMachine
             Console.ReadKey();
             Console.Clear();
             return balance;
-
         }
     }
 }

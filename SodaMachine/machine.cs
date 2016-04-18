@@ -47,7 +47,7 @@ namespace SodaMachine
         }
         public void populateRegister()
         {
-            //for (int penny = 0; penny < 50; penny++) { register.coins.Add(new Penny()); }
+            for (int penny = 0; penny < 50; penny++) { register.coins.Add(new Penny()); }
             for (int nickel = 0; nickel < 20; nickel++) { register.coins.Add(new Nickel()); }
             for (int dime = 0; dime < 10; dime++) { register.coins.Add(new Dime()); }
             for (int quarter = 0; quarter < 20; quarter++) { register.coins.Add(new Quarter()); }
@@ -56,7 +56,7 @@ namespace SodaMachine
         {
             for (int sodaPop = 0; sodaPop < 5; sodaPop++)
             {
-                //inventory.soda.Add(new Grape());
+                inventory.soda.Add(new Grape());
                 inventory.soda.Add(new Orange());
                 inventory.soda.Add(new Meat());
             }
@@ -207,28 +207,3 @@ namespace SodaMachine
         }        
     }
 }
-
-
-//foreach(Coins coin in insertedBalance)
-//{
-//    Type coinType = coin.GetType();
-//    foreach(Coins coin2 in register.coins)
-//    {
-//        Type coin2Type = coin2.GetType();
-//        if(coin2Type == coinType)
-//        {
-//            register.coins.Remove(coin2);
-//            break;
-//        }
-//    }
-//}
-
-//public decimal getInsertedBalance()
-//{
-//    decimal insertChange = 0;
-//    foreach(Coins coin in insertedBalance)
-//    {
-//        insertChange += coin.value;
-//    }
-//    return insertChange;
-//}
